@@ -570,6 +570,9 @@ video {
 .p-10 {
   padding: 2.5rem;
 }
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
