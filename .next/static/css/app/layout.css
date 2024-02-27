@@ -567,6 +567,9 @@ video {
 .flex {
   display: flex;
 }
+.p-10 {
+  padding: 2.5rem;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -575,6 +578,11 @@ video {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb))
+  background: rgb(var(--background-rgb));
+  font-weight: 400;
 }
 
+h1 {
+  font-weight: 700;
+  font-size: large;
+}
