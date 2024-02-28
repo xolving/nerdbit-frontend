@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="p-10">
+    <main>
       <div className="pb-10">
         <h1>xolving</h1>
         <p>example page</p>
