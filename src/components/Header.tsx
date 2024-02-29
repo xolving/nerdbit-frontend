@@ -11,15 +11,23 @@ const StyledHeader = styled.header`
     padding-left: 30px;
     padding-right: 30px;
     align-items: center;
-    column-gap: 20px;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    column-gap: 18px;
+    border-width: 1px;
+    font-weight: 500;
   }
 
-  .menus {
+  .menu {
     display: flex;
-    column-gap: 10px;
-    font-weight: 500;
+    column-gap: 15px;
     padding-left: 20px;
+  }
+
+  .menu > * {
+    width: 40px;
+  }
+
+  .account {
+    margin-left: auto;
   }
 `;
 
@@ -27,9 +35,13 @@ export default function Header(){
     return (
         <StyledHeader>
             <a href="/"><Image src={xolving} alt="xolving" width={35} height={35} /></a>
-            <div className="menus">
-                <a href="/about"><p>about</p></a>
-                <a href="/discord"><p>discord</p></a>
+            <div className="menu">
+                <a href="/about"><p>About</p></a>
+                <a href="/discord"><p>Forum</p></a>
+                <a href="/member"><p>Member</p></a>
+            </div>
+            <div className="account">
+              <a href="/login"><p>Login</p></a>
             </div>
         </StyledHeader>
     )
