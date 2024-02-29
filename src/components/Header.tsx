@@ -14,16 +14,12 @@ const StyledHeader = styled.header`
     column-gap: 18px;
     border-width: 1px;
     font-weight: 500;
+    background-color: white;
   }
 
   .menu {
     display: flex;
-    column-gap: 15px;
-    padding-left: 20px;
-  }
-
-  .menu > * {
-    width: 40px;
+    column-gap: 20px;
   }
 
   .account {
@@ -35,6 +31,7 @@ export default function Header(){
     return (
         <StyledHeader>
             <a href="/"><Image src={xolving} alt="xolving" width={35} height={35} /></a>
+            <p className="text-2xl text-slate-300 font-extralight">/</p>
             <div className="menu">
                 <a href="/about"><p>About</p></a>
                 <a href="/discord"><p>Forum</p></a>
