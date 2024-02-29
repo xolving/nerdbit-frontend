@@ -1,11 +1,15 @@
+import { Title } from "@/components/Title";
+import styled from "styled-components";
+
+
+
 export default function Home() {
   return (
     <main>
-      <div className="pb-10">
-        <h1>xolving</h1>
-        <p>example page</p>
+      <div className="text-center pt-10 font-light">
+        <Title>xolving</Title>
+        <p className="pt-3 text-xl">개발자에 의한, 개발자를 위한</p>
       </div>
-      <p>지금은 아무것도 없습니다.</p>
     </main>
   );
 }
