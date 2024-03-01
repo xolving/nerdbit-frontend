@@ -33,9 +33,9 @@ export default function Header(){
             <a href="/"><Image src={xolving} alt="xolving" width={35} height={35} /></a>
             <p className="text-2xl text-slate-300 font-extralight">/</p>
             <div className="menu">
-                <a href="/about"><p>About</p></a>
-                <a href="/discord"><p>Forum</p></a>
-                <a href="/member"><p>Member</p></a>
+                <a href="/about"><p>소개</p></a>
+                <a href="/discord"><p>포럼</p></a>
+                <a href="/contribute"><p>기여하기</p></a>
             </div>
             <div className="account">
               <a href="/login"><p>Login</p></a>
