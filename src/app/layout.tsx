@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from 'next/font/local'
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const inter = localFont({ 
   src: '../public/fonts/PretendardVariable.woff2',
@@ -21,8 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        {children}
+        <div className="min-h-screen">
+          <Header />
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );
