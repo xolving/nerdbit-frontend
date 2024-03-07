@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import styled from "styled-components";
-import xolving from "@/public/xolving.svg"
+import nerdbit from "@/public/nerdbit.svg"
 
 const StyledHeader = styled.header`
   && {
@@ -12,9 +12,9 @@ const StyledHeader = styled.header`
     padding-right: 30px;
     align-items: center;
     column-gap: 18px;
-    border-width: 1px;
     font-weight: 500;
-    background-color: white;
+    font-size: large;
+    display: fixed;
   }
 
   .menu {
@@ -30,15 +30,14 @@ const StyledHeader = styled.header`
 export default function Header(){
     return (
         <StyledHeader>
-            <a href="/"><Image src={xolving} alt="xolving" width={35} height={35} /></a>
-            <p className="text-2xl text-slate-300 font-extralight">/</p>
+            <a href="/"><Image src={nerdbit} alt="xolving" width={87.5} height={25} /></a>
             <div className="menu">
                 <a href="/about"><p>소개</p></a>
                 <a href="/discord"><p>포럼</p></a>
                 <a href="/contribute"><p>기여하기</p></a>
             </div>
             <div className="account">
-              <a href="/login"><p>Login</p></a>
+              <a href="/login"><p>로그인</p></a>
             </div>
         </StyledHeader>
     )
