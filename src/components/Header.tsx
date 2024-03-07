@@ -34,7 +34,6 @@ export default function Header(){
             <div className="menu">
                 <a href="/about"><p>소개</p></a>
                 <a href="/discord"><p>포럼</p></a>
-                <a href="/contribute"><p>기여하기</p></a>
             </div>
             <div className="account">
               <a href="/login"><p>로그인</p></a>
